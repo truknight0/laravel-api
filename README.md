@@ -71,50 +71,53 @@ ex.) authorization = Bearer 1|Eh5FMMW9e1WrfYcn6yKtpNwwLXLcLFKDMZm8oyJz738b76c4
 ```code
 {
     "message": "success",
-    "data": [
-        {
-            "idx": 1,
-            "title": "고양이가 자꾸 털을 뱉어요 ㅠㅠ",
-            "contents": "도와주세요. 감사합니다! 길게 써보겠...",
-            "user_idx": 2,
-            "reply_count": 1
-        },
-        {
-            "idx": 2,
-            "title": "test2",
-            "contents": "22222",
-            "user_idx": 3,
-            "reply_count": 0
-        },
-        {
-            "idx": 3,
-            "title": "test3",
-            "contents": "3333",
-            "user_idx": 2,
-            "reply_count": 0
-        },
-        {
-            "idx": 4,
-            "title": "test4",
-            "contents": "44",
-            "user_idx": 3,
-            "reply_count": 0
-        },
-        {
-            "idx": 5,
-            "title": "test5",
-            "contents": "55",
-            "user_idx": 2,
-            "reply_count": 0
-        },
-        {
-            "idx": 6,
-            "title": "test6",
-            "contents": "666",
-            "user_idx": 3,
-            "reply_count": 0
-        }
-    ]
+    "data": {
+        "total_count": 9,
+        "list": [
+            {
+                "idx": 1,
+                "title": "고양이가 자꾸 털을 뱉어요 ㅠㅠ",
+                "contents": "도와주세요. 감사합니다! 길게 써보겠...",
+                "user_idx": 2,
+                "reply_count": 2
+            },
+            {
+                "idx": 2,
+                "title": "test2",
+                "contents": "22222",
+                "user_idx": 3,
+                "reply_count": 0
+            },
+            {
+                "idx": 3,
+                "title": "test3",
+                "contents": "3333",
+                "user_idx": 2,
+                "reply_count": 0
+            },
+            {
+                "idx": 4,
+                "title": "test4",
+                "contents": "44",
+                "user_idx": 3,
+                "reply_count": 0
+            },
+            {
+                "idx": 5,
+                "title": "test5",
+                "contents": "55",
+                "user_idx": 2,
+                "reply_count": 0
+            },
+            {
+                "idx": 6,
+                "title": "test6",
+                "contents": "666",
+                "user_idx": 3,
+                "reply_count": 0
+            }
+        ]
+    }
 }
 ```
 
