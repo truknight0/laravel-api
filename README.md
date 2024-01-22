@@ -43,7 +43,7 @@ php artisan db:seed --class=UserSeeder
 
 
 ### - login 
-#### method = get
+#### method = post
 #### uri = /api/login
 #### request
 - email : string
@@ -60,7 +60,7 @@ ex.) authorization = Bearer 1|Eh5FMMW9e1WrfYcn6yKtpNwwLXLcLFKDMZm8oyJz738b76c4
 
 
 ### - QnA 목록
-#### method = post
+#### method = get
 #### uri = /api/board/list/{page}
 #### is_auth = 아니오
 #### param
