@@ -44,6 +44,12 @@ class QnaBoard extends Model
 
         return $qnaList;
     }
+    public function totalCount() {
+        $qnaList = DB::table('qna_board')
+            ->get();
+
+        return $qnaList->count();
+    }
 
     public function view(int $idx) {
         $qnaView = DB::table('qna_board')

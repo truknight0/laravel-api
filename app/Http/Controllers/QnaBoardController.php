@@ -20,8 +20,14 @@ class QnaBoardController extends Controller
         $start = $count * ($page - 1);
         $qnaBoard = new QnaBoard;
         $list = $qnaBoard->qnaList($start, $count);
+        $totalCount = $qnaBoard->totalCount();
 
-        return $this->result($list);
+        $data = [
+            'total_count' => $totalCount,
+            'list' => $list,
+        ];
+
+        return $this->result($data);
     }
 
     /*
