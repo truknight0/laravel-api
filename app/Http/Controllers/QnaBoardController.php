@@ -79,6 +79,11 @@ class QnaBoardController extends Controller
 
         $user = Users::find(Auth::user()->idx);
 
+        // 멘토 (user_level =2)만 작성 가능
+        if ($user->user_level == config('constants.status.user_menti')) {
+            return $this->result(config('constants.message.reply_not_create_user_level'));
+        }
+
         $qnaBoardReply = new QnaBoardReply;
 
         // 원글에 달린 답변이 3개 이상이면 더 이상 작성 불가
