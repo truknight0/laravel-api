@@ -47,7 +47,7 @@ php artisan db:seed --class=UserSeeder
 #### uri = /api/login
 #### request
 - email : string
-- password
+- password : string
 
 #### response
 
@@ -127,7 +127,7 @@ ex.) authorization = Bearer 1|Eh5FMMW9e1WrfYcn6yKtpNwwLXLcLFKDMZm8oyJz738b76c4
 #### uri = /api/board/view/{idx}
 #### is_auth = 아니오
 #### param
-- page : integer
+- idx : integer
 
 #### response
 
