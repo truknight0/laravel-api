@@ -29,7 +29,13 @@ php artisan migrate
 php artisan db:seed --class=UserSeeder
 ```
 
-구성이 완료되면 http://127.0.0.1:8000 으로 접속하여 Laravel Framework 메인페이지에 정상적으로 접속되는지 확인하십시오.
+구성이 완료되면 laravel server를 실행하십시오.
+
+```bash
+php artisan serve
+```
+
+http://127.0.0.1:8000 으로 접속하여 Laravel Framework 메인페이지에 정상적으로 접속되는지 확인하십시오. (valet으로 실행할 경우, valet park, valet link 설정 필요)
 
 
 
