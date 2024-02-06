@@ -32,6 +32,11 @@ class UsersController extends Controller
 
         // token return
         $user->save();
-        return $user->createToken('apiToken')->plainTextToken;
+        $data = [
+            'token' => $user->createToken('apiToken')->plainTextToken
+        ];
+
+        return $this->result($data);
+//        return $user->createToken('apiToken')->plainTextToken;
     }
 }
